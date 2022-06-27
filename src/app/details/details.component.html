@@ -1,0 +1,19 @@
+<section class="container-box">
+	<section class="container-form">
+		<div class="title">Take out cash</div>
+		<form [formGroup]="cashForm">
+			<label class="text-label">Amount to be taken out</label>
+			<input formControlName='cash' type="number" />
+
+			<button class="submit-button" (click)="submitData()">Get Cash</button>
+		</form>
+
+		<p>Notes of 1000: {{notesOf1000}}</p>
+		<p>Notes of 500: {{notesOf500}}</p>
+		<p>Notes of 100: {{notesOf100}}</p>
+		<p>Notes of 50: {{notesOf50}}</p>
+		<p>Notes of 20: {{notesOf20}}</p>
+		<p>Notes of 10: {{notesOf10}}</p>
+		<p>Notes of 1: {{notesOf1}}</p>
+	</section>
+</section>
